@@ -8,7 +8,7 @@ export default function Footer() {
           href="https://digitalheroesco.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold px-6 py-3 rounded-2xl transition shadow-md shadow-purple-100 text-sm"
+          className="bg-gray-50 hover:bg-gray-100 border border-gray-100 text-gray-400 hover:text-gray-600 font-medium py-3 rounded-2xl transition text-sm"
         >
           Built for Digital Heroes
         </a>

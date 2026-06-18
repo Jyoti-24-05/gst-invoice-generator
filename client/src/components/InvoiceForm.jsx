@@ -102,9 +102,9 @@ const handleExportPDF = async () => {
       {/* Header */}
 <div className="mb-8 text-center">
   <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 rounded-full px-4 py-1.5 mb-3">
-    <span className="text-purple-400 text-sm">✦</span>
+    <span className="text-purple-400 text-sm"></span>
     <span className="text-purple-500 text-xs font-medium tracking-wide uppercase">Free GST Tool</span>
-    <span className="text-purple-400 text-sm">✦</span>
+    <span className="text-purple-400 text-sm"></span>
   </div>
   <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
     GST Invoice Generator
@@ -305,7 +305,7 @@ const handleExportPDF = async () => {
   <button
     onClick={handleExportPDF}
     disabled={exporting}
-    className="bg-gradient-to-r from-emerald-400 to-teal-400 hover:from-emerald-500 hover:to-teal-500 text-white font-medium py-3 rounded-2xl transition text-sm disabled:opacity-50 flex items-center justify-center gap-2 shadow-sm shadow-emerald-100"
+    className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-3 rounded-2xl transition text-sm shadow-sm shadow-purple-100"
   >
     {exporting ? (
       <>
@@ -321,7 +321,7 @@ const handleExportPDF = async () => {
   <button
     onClick={handleSave}
     disabled={saving}
-    className="bg-gradient-to-r from-blue-400 to-indigo-400 hover:from-blue-500 hover:to-indigo-500 text-white font-medium py-3 rounded-2xl transition text-sm disabled:opacity-50 shadow-sm shadow-blue-100"
+    className="bg-gray-50 hover:bg-gray-100 border border-gray-100 text-gray-400 hover:text-gray-600 font-medium py-3 rounded-2xl transition text-sm"
   >
     {saving ? 'Saving...' : ' Save Invoice'}
   </button>
