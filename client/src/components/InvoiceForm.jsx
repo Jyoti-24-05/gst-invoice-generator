@@ -110,7 +110,7 @@ const handleExportPDF = async () => {
     GST Invoice Generator
   </h1>
   <p className="text-gray-400 mt-2 text-sm">
-    Create, preview & download professional GST invoices — completely free
+    Create, preview & download professional GST invoices: completely free
   </p>
 </div>
 
