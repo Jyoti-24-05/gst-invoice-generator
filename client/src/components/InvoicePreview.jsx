@@ -183,7 +183,7 @@ export default function InvoicePreview({ data }) {
       {/* ── Amount in Words ── */}
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100 rounded-lg p-3 mb-5">
         <span className="text-gray-400 mr-2">Amount in Words:</span>
-        <span className="font-semibold text-purple-700 italic">
+        <span className="font-semibold text-purple-600 italic">
           {numberToWords(grandTotal)}
         </span>
       </div>

@@ -69,7 +69,7 @@ export default function InvoiceForm() {
   setErrors({})
   setSaving(true)
   try {
-    await axios.post('http://localhost:5000/api/invoices', invoiceData)
+    await axios.post(`${import.meta.env.VITE_API_URL}/api/invoices`, invoiceData)
     setSavedMessage('Invoice saved successfully!')
     setTimeout(() => setSavedMessage(''), 3000)
   } catch (err) {
@@ -345,8 +345,8 @@ const handleExportPDF = async () => {
         {/* RIGHT — Live Preview */}
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-sm border border-pink-50 p-6">
           <h2 className="text-xs font-semibold text-pink-400 uppercase tracking-widest mb-4 flex items-center gap-2 after:content-[''] after:flex-1 after:h-px after:bg-pink-100">
-  Live Preview
-</h2>
+          Live Preview
+          </h2>
           <InvoicePreview data={invoiceData} />
         </div>
 
